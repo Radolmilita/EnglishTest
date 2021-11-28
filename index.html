@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <canvas id = "canvas"></canvas>
+    </div>
+    <div class="buttonStart">
+        <button id = "startbutton" onclick="startTest()">Нажми сюда что б начать</button>
+    </div>
+    <div class = "hidden">
+        <input id = "translation" type = "text" size="40">
+    </div>
+    <div class="submit" onclick="SubmitAndChange()">
+        <button id = "submitButton">Ответить</button>
+    </div>
+    <div class="tracker">
+        <p><span id = "currentPosition">0</span>/10</p>
+        <p>Правильных ответов: <span id = "correctAnsw"></span> Ошибок: <span id = "incorrectAnsw"></span></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
